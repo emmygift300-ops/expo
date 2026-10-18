@@ -1,41 +1,5 @@
 ---
-title: Expo SDK reference
-description: Access device and system functionality in your Expo and React Native apps using Expo SDK packages.
-hideTOC: true
----
-
-import { BookOpen02Icon } from '@expo/styleguide-icons/outline/BookOpen02Icon';
-import { CodeSquare01Icon } from '@expo/styleguide-icons/outline/CodeSquare01Icon';
-
-import { BoxLink } from '~/ui/components/BoxLink';
-import { Collapsible } from '~/ui/components/Collapsible';
-import RedirectNotification from '~/ui/components/RedirectNotification';
-import {
-  AndroidIOSCompatibilityTable,
-  ReactNativeCompatibilityTable,
-} from '~/ui/components/SDKTables';
-import { Terminal } from '~/ui/components/Snippet';
-import { CODE } from '~/ui/components/Text';
-
-<RedirectNotification>
-  The page you are looking for does not exist in this SDK version. It may have been deprecated or
-  added to a newer SDK version.
-</RedirectNotification>
-
-The Expo SDK is a collection of packages that provide access to device and system functionality such as camera, contacts, location, sensors, haptics, and more. Each package targets a specific feature and can be used independently. All packages work in any React Native app with the `expo` package installed.
-
-You can install any Expo SDK package using the [`npx expo install`](/more/expo-cli/#install) command. For example, three different packages are installed using the following command:
-
-<Terminal
-  cmd={{
-    npm: ['$ npx expo install expo-camera expo-contacts expo-sensors'],
-    yarn: ['$ yarn expo install expo-camera expo-contacts expo-sensors'],
-    pnpm: ['$ pnpm expo install expo-camera expo-contacts expo-sensors'],
-    bun: ['$ bun expo install expo-camera expo-contacts expo-sensors'],
-  }}
-/>
-
-After installing one or more packages, you can import them into your JavaScript code:
+ more packages, you can import them into your JavaScript code:
 
 ```ts
 import { CameraView } from 'expo-camera';
